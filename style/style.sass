@@ -1,0 +1,986 @@
+$gray: #f2f2f2
+    
+@keyframes mymove 
+  from 
+    height: 108px
+  to 
+    height: 164px
+
+body
+    font-family: "Gilroy", sans-serif
+    background: linear-gradient(80.5deg, #83A4BD 11.55%, #A5A2B3 24.51%, #BA929B 33.33%, #BD8689 39.89%, #C46F6A 47.85%, #C65857 55.62%, #BF4145 65.14%, #9C2E37 75.49%, #7A262E 84.66%, #5B1E23 95.55%, #421F23 103.99%, #2D1C22 111.11%)
+    color: #fff
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+.container
+    max-width: 1162px
+    margin: 0 auto
+
+#last-blog
+    margin: 0
+
+.btn
+    font-weight: 600
+    font-size: 20px
+    line-height: 20px
+    background: #F2323D
+    border-radius: 6px
+    padding: 20px 36px 20px 32px
+    border: none
+    cursor: pointer
+    color: #fff
+
+.header
+    padding: 40px 0 0 0
+    .main-header
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .header-navigation_items
+            display: flex
+            padding: 0 80px 7px 0
+            .header-navigation_item
+                list-style: none
+                font-weight: 400
+                font-size: 18px
+                line-height: 28px
+                cursor: pointer
+                margin-right: 51px
+                color: $gray
+        .header-call
+            margin: -21px 0 0px 0
+            .header-call_flex
+                display: flex
+                align-items: center
+                margin: 0 0 0px 0
+                .header-call_number
+                    font-weight: 600
+                    font-size: 18px
+                    line-height: 28px
+                    padding: 0 0 0 8px
+            .header-call_subtitle
+                font-weight: 500
+                font-size: 13px
+                line-height: 20px
+
+.subtitle-section
+    padding: 83px 0 0 0
+    .main-subtitle
+        display: flex
+        align-items: center
+        .subtitle-info
+            max-width: 602px
+            &_title
+                span
+                    font-weight: 700
+                    letter-spacing: 0.1px
+                font-weight: 400
+                font-size: 36px
+                line-height: 47px
+            &_paragraph
+                font-weight: 400
+                font-size: 20px
+                line-height: 32px
+                margin: 20px 0 50px 0
+            .btn
+                letter-spacing: -0.6px
+            &_subitem
+                display: flex
+                margin: 100px 0 0 0
+                &-blog
+                    width: 33.3%
+                    border-left: 1px solid #e9e9e9
+                    padding: 0 0 0 15px
+                    &-info
+                        font-weight: 400
+                        font-size: 18px
+                        line-height: 21px
+                        margin: 13px 0 0 0
+        .subtitle-image
+            position: absolute
+            right: 0
+            top: 77px
+            z-index: -1
+
+.plan-section
+    padding: 96px 0 100px 0
+    .bg-color
+        width: 100%
+        height: 842px
+        opacity: 0.1
+        background: #fafafa
+        z-index: -1
+        position: absolute
+    .plan-title
+        font-weight: 600
+        font-size: 32px
+        line-height: 42px
+        margin: 58px 0 0 0
+    .main-plan
+        padding: 40px 0 0 0
+        display: grid
+        grid-template-columns: 51.7% 48.3%
+        .plan-blog
+            display: flex
+            margin: 0 0 60px 0
+            .plan-blog_info
+                padding-left: 30px
+                .plan-blog_title
+                    font-weight: 500
+                    font-size: 24px
+                    line-height: 28px
+                    margin: 15px 0 21px 0
+                .plan-blog_subtitle
+                    font-weight: 400
+                    font-size: 18px
+                    line-height: 25px
+                    margin: 0px 0 12px 0
+                    list-style: none
+                    display: flex
+                    align-items: center
+                .plan-blog_subtitle::before
+                    content: ""
+                    width: 6px
+                    height: 6px
+                    border-radius: 50px
+                    margin-right: 13px
+                    background: #fff
+                .plan-blog_paragraph
+                    font-weight: 400
+                    font-size: 18px
+                    line-height: 25px
+
+.test
+    .container
+        max-width: 1350px
+        margin: 0 auto
+        .test-img
+            width: 100%
+            
+.advice-section
+    padding: 75px 0
+    .bg-color
+        width: 100%
+        height: 564px
+        opacity: 0.1
+        background: #fafafa
+        z-index: -1
+        position: absolute
+    .advice-title
+        max-width: 651px
+        font-weight: 600
+        font-size: 32px
+        line-height: 42px
+        letter-spacing: 0.1px
+        margin: 79px 0 40px 0
+    .main-advice
+        display: grid
+        grid-template-columns: 31% 31% 31%
+        column-gap: 40px
+        row-gap: 40px
+        .advice-blog
+            max-width: 360px
+            height: 120px
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding: 0px 15px 0px 40px
+            border: 1px solid rgba(255, 255, 255, 0.3)
+            border-radius: 6px
+            filter: drop-shadow(0px 10px 20px rgba(116, 18, 18, 0.05))
+            transition: all 0.1s ease 0s
+            cursor: pointer
+            &_title
+                font-weight: 500
+                font-size: 18px
+                line-height: 29px
+            &_box
+                display: block
+                height: 100%
+                .advice-blog_num
+                    font-weight: 700
+                    font-size: 32px
+                    line-height: 41px
+                    margin: 15px 0 0 0
+        .advice-blog:hover
+            background: #F2323D
+            box-shadow: 0px 10px 20px rgba(116, 18, 18, 0.05)
+        .active
+            background: #F2323D
+            box-shadow: 0px 10px 20px rgba(116, 18, 18, 0.05)
+
+.reviews-section
+    padding: 86px 0 77px 0
+    .main-reviews
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 40px
+        .reviews-title
+            font-weight: 600
+            font-size: 32px
+            line-height: 41px
+            letter-spacing: 0.1px
+        .controller
+            display: flex
+            align-items: center
+            flex-shrink: 0
+            img
+                cursor: pointer
+    .container-fluid
+        width: 100%
+        overflow: hidden
+        .slider
+            display: inline-flex
+            transition: .5s ease
+            &-col
+                max-width: 260px
+                height: 366px
+                margin-right: 40px
+
+.caralog-section
+    padding: 0 0 44px 0
+    .main-catalog
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 32px
+        .catalog-title
+            font-weight: 600
+            font-size: 32px
+            line-height: 41px
+            letter-spacing: 0.1px
+        .catalog-title_mob
+            display: none
+        .controller-sec
+            display: flex
+            align-items: center
+            flex-shrink: 0
+            img
+                cursor: pointer
+    .container-fluid-sec
+        width: 100%
+        overflow: hidden
+        .slider-sec
+            display: inline-flex
+            transition: .5s ease
+            .slider-col-sec
+                max-width: 399px
+                height: 339px
+                margin-right: 20px
+
+.register-section
+    .bg-color
+        width: 100%
+        height: 523px
+        opacity: 0.1
+        background: #fafafa
+        z-index: -1
+        position: absolute
+        margin: -80px 0 0 0
+    .main-register
+        border: 1px solid #FEF9F9
+        box-shadow: 0px 10px 40px rgba(116, 18, 18, 0.05)
+        border-radius: 6px
+        margin: 80px 0 0px 0
+        padding: 60px 80px 0 41px
+        display: flex
+        justify-content: space-between
+        .register-img
+            position: relative
+            max-width: 374px
+            height: 366px
+            img
+                position: absolute
+                top: -170px
+        .register-info
+            width: 640px
+            &_title
+                span
+                    font-weight: 700
+                    letter-spacing: 0.1px
+                font-weight: 400
+                font-size: 32px
+                line-height: 42px
+            
+            &_form
+                display: grid
+                grid-template-columns: auto auto auto
+                margin: 40px 0 0 0
+                input
+                    max-width: 200px
+                    font-weight: 400
+                    font-size: 18px
+                    line-height: 18px
+                    padding: 19px 0 15px 30px
+                    background: rgba(255, 255, 255, 0.15)
+                    border: 1px solid rgba(255, 255, 255, 0.3)
+                    border-radius: 6px
+                    letter-spacing: -0.3px
+                    outline: none
+                    color: #fff
+                input::placeholder
+                    font-weight: 400
+                    font-size: 18px
+                    line-height: 18px
+                    color: #fff
+                button
+                    font-weight: 600
+                    font-size: 18px
+                    line-height: 18px
+                    padding: 19px 50px
+
+.sertification-section
+    padding: 95px 0 76px 0
+    .main-sertification
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 40px
+        &_title
+            max-width: 615px
+            font-weight: 600
+            font-size: 32px
+            line-height: 42px
+            letter-spacing: .1px
+        .controller-f
+            display: flex
+            align-items: center
+            flex-shrink: 0
+            img
+                cursor: pointer
+    .container-fluid-f
+        width: 100%
+        overflow: hidden
+        .slider-f
+            display: inline-flex
+            transition: .5s ease
+            .slider-col-f
+                max-width: 260px
+                height: 366px
+                margin-right: 40px
+
+.answers-section
+    overflow-y: hidden
+    height: 554px
+    .bg-color
+        width: 100%
+        height: 554px
+        opacity: 0.1
+        background: #fafafa
+        z-index: -1
+        position: absolute
+    .answers-title
+        font-weight: 600
+        font-size: 32px
+        line-height: 41px
+        padding: 81px 0 40px 0
+        letter-spacing: .1px
+    .main-answers
+        display: grid
+        grid-template-columns: auto auto
+        column-gap: 40px
+        row-gap: 20px
+        .answers-blog
+            display: flex
+            align-items: flex-start
+            height: 84px
+            padding: 30px
+            border: 1px solid rgba(255, 255, 255, 0.3)
+            filter: drop-shadow(0px 10px 20px rgba(116, 18, 18, 0.05))
+            border-radius: 6px
+            overflow-y: hidden
+            &_info
+                &-title
+                    font-weight: 500
+                    font-size: 21px
+                    line-height: 24px
+                &-subtitle
+                    font-weight: 500
+                    font-size: 18px
+                    line-height: 30px
+                    padding: 22px 0 0 0
+            .answers-blog_arrow
+                width: 24px
+                position: relative
+                .arrow
+                    top: 0
+                    position: absolute
+                    transform: rotate(0deg)
+                    cursor: pointer
+                    transition: all .5s ease
+                    right: 0px
+                .arrow:hover
+                    transform: rotate(-180deg)
+        .answers-blog:hover
+            animation: mymove .5s
+            animation-fill-mode: both
+
+.footer
+    .footer-map
+        position: absolute
+        width: 100%
+        z-index: -1
+        img
+            width: 100%
+            height: 600px
+    .container
+        max-width: 1282px
+        margin: 0 auto
+        padding: 79px 0 0 0
+        .main-footer
+            max-width: 511px
+            background: #FDFDFD
+            box-shadow: 0px 10px 20px rgba(116, 18, 18, 0.05)
+            border-radius: 6px
+            padding: 61px 61px 48px 61px
+            &_title
+                font-weight: 600
+                font-size: 32px
+                line-height: 42px
+                letter-spacing: .1px
+                color: #333
+            &_social
+                font-weiht: 400
+                font-size: 20px
+                line-height: 32px
+                margin: 26px 0 25px 0
+                color: #4f4f4f
+            &_subtitle
+                font-weight: 400
+                font-size: 15px
+                line-height: 23px
+                letter-spacing: .5px
+                color: #4f4f4f
+                margin: 0 0  30px 0
+            &_icons
+                a
+                    margin-right: 25px
+
+@media only screen and (max-width: 1200px)
+    .container
+        max-width: 760px
+        margin: 0 auto
+
+    .btn
+        font-size: 18px
+        line-height: 18px
+        padding: 20px 32px
+
+    .header
+        padding: 54px 0 0 0
+        .main-header
+            .header-logo
+                display: none
+            .header-navigation_items
+                margin: -14px 0 0px 0
+                padding: 0
+                .header-navigation_item
+                    font-size: 14px
+                    line-height: 22px
+                    margin-right: 31px
+    
+    .subtitle-section
+        padding: 42px 0 43px 0
+        .main-subtitle
+            .subtitle-info
+                max-width: 368px
+                &_title
+                    font-size: 24px
+                    line-height: 31px
+                &_paragraph
+                    font-size: 16px
+                    line-height: 26px
+                    margin: 19px 0 25px 0
+                .btn
+                    letter-spacing: -0.4px
+            .subtitle-info_subitem
+                margin-top: 68.91px
+                .subtitle-info_subitem-blog
+                    padding-left: 9.16px
+                    img
+                        width: 19.54px
+                        height: 19.54px
+                    &-info
+                        font-size: 10.99px
+                        line-height: 13.19px
+                        margin-top: 7px
+            .subtitle-image
+                overflow-x: hidden
+                right: 0
+                top: 115px
+                img
+                    width: 564px
+                    margin-right: -13px
+                    height: 438px
+    .plan-section
+        padding: 1px 0 60px 0
+        .bg-color
+            height: 618px
+        .plan-title
+            font-weight: 600
+            font-size: 24px
+            line-height: 31px
+            margin: 57px 0 0 0
+        .main-plan
+            padding: 26px 0 0 0
+            grid-template-columns: 51.2% 48.9%
+            .plan-blog
+                margin: 0 0 33px 0
+                img
+                    width: 175px
+                    height: 180px
+                .plan-blog_info
+                    padding: 0 0 0 20px
+                    .plan-blog_title
+                        font-size: 18px
+                        line-height: 21px
+                        margin: 6px 0 15px 0
+                    .plan-blog_subtitle
+                        font-size: 14px
+                        line-height: 19px
+                        margin: 0 0 11px 0
+                    .plan-blog_subtitle::before
+                        display: none
+                    .plan-blog_paragraph
+                        font-size: 14px
+                        line-height: 19px
+    
+    .test
+        .container
+            max-width: 760px
+            margin: 0 auto
+            .test-img
+                height: 405px
+
+    .advice-section
+        padding: 35px 0 75px 0
+        .bg-color
+            height: 357px
+        .advice-title
+            font-size: 24px
+            line-height: 31px
+            margin: 51px 0 25px 2px
+        .main-advice
+            display: grid
+            column-gap: 20px
+            row-gap: 20px
+            .advice-blog
+                width: 240px
+                height: 75px
+                padding: 0 10px 0 15px
+                &_title
+                    font-size: 14px
+                    line-height: 23px
+                &_box
+                    height: 10px
+                    top: 0
+                    right: 10px
+                    position: absolute
+                    .advice-blog_num
+                        font-size: 20px
+                        line-height: 26px
+                        margin: 10px 0 0 0
+
+    .reviews-section
+        padding: 25px 0 67px 0
+        .main-reviews
+            margin: 0 0 25px 0
+            .reviews-title
+                font-size: 24px
+                line-height: 31px
+                padding: 0 0 0 2px
+        .container-fluid
+            .slider
+                .slider-col
+                    width: 175px
+                    height: 245px
+                    margin-right: 20px
+
+    .caralog-section
+        padding: 0 0 45px 0
+        .main-catalog
+            margin-bottom: 19px
+            .catalog-title
+                display: none
+            .catalog-title_mob
+                display: block
+                font-weight: 600
+                font-size: 24px
+                line-height: 31px
+                padding-left: 2px
+                letter-spacing: 0.1px
+        .container-fluid-sec
+            margin-left: -10px
+            .slider-sec
+                .slider-col-sec
+                    width: 196px
+                    height: 196px
+                    margin-right: -1px
+
+    .register-section
+        padding-top: 65px
+        .bg-color
+            height: 353px
+        .main-register
+            height: 238px
+            margin-top: -20px
+            padding: 33px 37px 0 19px
+            .register-img
+                max-width: 225px
+                height: 285px
+                img
+                    width: 225px
+                    height: 285px
+                    top: -80px
+            .register-info
+                width: 463px
+                &_title
+                    font-size: 24px
+                    line-height: 31px
+                &_form
+                    margin: 26px 0 0 0
+                    input
+                        max-width: 140px
+                        padding: 13px 0 15px 16px
+                        font-size: 16px
+                        line-height: 16px
+                    input::placeholder
+                        font-size: 16px
+                        line-height: 16px
+                    button
+                        font-size: 16px
+                        line-height: 16px
+                        padding: 16px 22px
+
+    .sertification-section
+        padding: 105px 0 45px 0
+        .main-sertification
+            margin-bottom: 25px
+            .main-sertification_title
+                max-width: 460px
+                font-size: 24px
+                line-height: 31px
+                padding-left: 2px
+        .container-fluid-f
+            .slider-f
+                .slider-col-f
+                    width: 175px
+                    height: 245px
+                    margin-right: 20px
+
+    .answers-section
+        height: 347px
+        .bg-color
+            height: 347px
+        .answers-title
+            font-size: 24px
+            line-height: 31px
+            padding: 51px 0 25px 0
+        .main-answers
+            column-gap: 27px
+            row-gap: 13px
+            .answers-blog
+                height: 55px
+                padding: 19px 19px 19px 19px
+                &_info
+                    &-title
+                        font-size: 13px
+                        line-height: 15px
+                        letter-spacing: 0.4px
+                    &-subtitle
+                        font-size: 11px
+                        line-height: 20px
+                        padding-top: 14px
+                &_arrow
+                    .arrow
+                        width: 15px
+            .answers-blog:hover
+                transition: all 0.5s ease 0s
+                max-height: 107px
+
+    .footer
+        .footer-map
+            img
+                height: 441px
+        .container
+            max-width: 825px
+            padding: 48px 0 0 0
+            .main-footer
+                max-width: 422px
+                padding: 33px 0 27px 32px
+                &_title
+                    font-size: 24px
+                    line-height: 31px
+                &_social
+                    font-size: 20px
+                    line-height: 32px
+                    margin: 21px 0 25px 0
+                &_subtitle
+                    margin-bottom: 32px
+
+@media only screen and (max-width: 597px)
+    .container
+        max-width: 760px
+        margin: 0 auto
+
+    .btn
+        font-size: 18px
+        line-height: 18px
+        padding: 20px 32px
+
+    .header
+        padding: 54px 0 0 0
+        .main-header
+            .header-logo
+                display: block
+            .header-navigation_items
+                margin: -14px 0 0px 0
+                padding: 0
+                .header-navigation_item
+                    font-size: 14px
+                    line-height: 22px
+                    margin-right: 31px
+    
+    .subtitle-section
+        padding: 42px 0 43px 0
+        .main-subtitle
+            .subtitle-info
+                max-width: 368px
+                &_title
+                    font-size: 24px
+                    line-height: 31px
+                &_paragraph
+                    font-size: 16px
+                    line-height: 26px
+                    margin: 19px 0 25px 0
+                .btn
+                    letter-spacing: -0.4px
+            .subtitle-info_subitem
+                margin-top: 68.91px
+                .subtitle-info_subitem-blog
+                    padding-left: 9.16px
+                    img
+                        width: 19.54px
+                        height: 19.54px
+                    &-info
+                        font-size: 10.99px
+                        line-height: 13.19px
+                        margin-top: 7px
+            .subtitle-image
+                overflow-x: hidden
+                right: 0
+                top: 115px
+                img
+                    width: 564px
+                    margin-right: -13px
+                    height: 438px
+    .plan-section
+        padding: 1px 0 60px 0
+        .bg-color
+            height: 618px
+        .plan-title
+            font-weight: 600
+            font-size: 24px
+            line-height: 31px
+            margin: 57px 0 0 0
+        .main-plan
+            padding: 26px 0 0 0
+            grid-template-columns: 51.2% 48.9%
+            .plan-blog
+                margin: 0 0 33px 0
+                img
+                    width: 175px
+                    height: 180px
+                .plan-blog_info
+                    padding: 0 0 0 20px
+                    .plan-blog_title
+                        font-size: 18px
+                        line-height: 21px
+                        margin: 6px 0 15px 0
+                    .plan-blog_subtitle
+                        font-size: 14px
+                        line-height: 19px
+                        margin: 0 0 11px 0
+                    .plan-blog_subtitle::before
+                        display: none
+                    .plan-blog_paragraph
+                        font-size: 14px
+                        line-height: 19px
+    
+    .test
+        .container
+            max-width: 760px
+            margin: 0 auto
+            .test-img
+                height: 405px
+
+    .advice-section
+        padding: 35px 0 75px 0
+        .bg-color
+            height: 357px
+        .advice-title
+            font-size: 24px
+            line-height: 31px
+            margin: 51px 0 25px 2px
+        .main-advice
+            display: grid
+            column-gap: 20px
+            row-gap: 20px
+            .advice-blog
+                width: 240px
+                height: 75px
+                padding: 0 10px 0 15px
+                &_title
+                    font-size: 14px
+                    line-height: 23px
+                &_box
+                    height: 10px
+                    top: 0
+                    right: 10px
+                    position: absolute
+                    .advice-blog_num
+                        font-size: 20px
+                        line-height: 26px
+                        margin: 10px 0 0 0
+
+    .reviews-section
+        padding: 25px 0 67px 0
+        .main-reviews
+            margin: 0 0 25px 0
+            .reviews-title
+                font-size: 24px
+                line-height: 31px
+                padding: 0 0 0 2px
+        .container-fluid
+            .slider
+                .slider-col
+                    width: 175px
+                    height: 245px
+                    margin-right: 20px
+
+    .caralog-section
+        padding: 0 0 45px 0
+        .main-catalog
+            margin-bottom: 19px
+            .catalog-title
+                display: none
+            .catalog-title_mob
+                display: block
+                font-weight: 600
+                font-size: 24px
+                line-height: 31px
+                padding-left: 2px
+                letter-spacing: 0.1px
+        .container-fluid-sec
+            margin-left: -10px
+            .slider-sec
+                .slider-col-sec
+                    width: 196px
+                    height: 196px
+                    margin-right: -1px
+
+    .register-section
+        padding-top: 65px
+        .bg-color
+            height: 353px
+        .main-register
+            height: 238px
+            margin-top: -20px
+            padding: 33px 37px 0 19px
+            .register-img
+                max-width: 225px
+                height: 285px
+                img
+                    width: 225px
+                    height: 285px
+                    top: -80px
+            .register-info
+                width: 463px
+                &_title
+                    font-size: 24px
+                    line-height: 31px
+                &_form
+                    margin: 26px 0 0 0
+                    input
+                        max-width: 140px
+                        padding: 13px 0 15px 16px
+                        font-size: 16px
+                        line-height: 16px
+                    input::placeholder
+                        font-size: 16px
+                        line-height: 16px
+                    button
+                        font-size: 16px
+                        line-height: 16px
+                        padding: 16px 22px
+
+    .sertification-section
+        padding: 105px 0 45px 0
+        .main-sertification
+            margin-bottom: 25px
+            .main-sertification_title
+                max-width: 460px
+                font-size: 24px
+                line-height: 31px
+                padding-left: 2px
+        .container-fluid-f
+            .slider-f
+                .slider-col-f
+                    width: 175px
+                    height: 245px
+                    margin-right: 20px
+
+    .answers-section
+        height: 347px
+        .bg-color
+            height: 347px
+        .answers-title
+            font-size: 24px
+            line-height: 31px
+            padding: 51px 0 25px 0
+        .main-answers
+            column-gap: 27px
+            row-gap: 13px
+            .answers-blog
+                height: 55px
+                padding: 19px 19px 19px 19px
+                &_info
+                    &-title
+                        font-size: 13px
+                        line-height: 15px
+                        letter-spacing: 0.4px
+                    &-subtitle
+                        font-size: 11px
+                        line-height: 20px
+                        padding-top: 14px
+                &_arrow
+                    .arrow
+                        width: 15px
+            .answers-blog:hover
+                transition: all 0.5s ease 0s
+                max-height: 107px
+
+    .footer
+        .footer-map
+            img
+                height: 441px
+        .container
+            max-width: 825px
+            padding: 48px 0 0 0
+            .main-footer
+                max-width: 422px
+                padding: 33px 0 27px 32px
+                &_title
+                    font-size: 24px
+                    line-height: 31px
+                &_social
+                    font-size: 20px
+                    line-height: 32px
+                    margin: 21px 0 25px 0
+                &_subtitle
+                    margin-bottom: 32px
