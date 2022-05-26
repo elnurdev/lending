@@ -41,15 +41,12 @@
                               <span class="line line2"></span>
                               <span class="line line3"></span>
                             </div>  
-                          <div class="logo">
-                            <h1>Navbar</h1>
-                          </div>
                           <div class="menu-items">
-                            <li class="header-navigation_item">О нас</li>
-                            <li class="header-navigation_item">Этапы</li>
-                            <li class="header-navigation_item">Отзывы</li>
-                            <li class="header-navigation_item">Наши работы</li>
-                            <li class="header-navigation_item" id="last-blog">Вопрос ответ</li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Этапы</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Наши работы</a></li>
+                            <li><a href="#">Вопрос ответ</a></li>
                           </div>
                         </div>
                       </div>
@@ -76,20 +73,23 @@
                     <div class="subtitle-info_title"><span>Рассчитаем стоимость</span> комплектующих и установки <span>системы заземления</span> за 1 день</div>
                     <div class="subtitle-info_paragraph">Получите подробную смету ответив<br>всего на 5 простых вопросов</div>
                     <button class="btn">Получить расчет</button>
-                    <div class="subtitle-info_subitem">
-                        <div class="subtitle-info_subitem-blog">
-                            <img src="./img/star-icon.svg" alt="Star">
-                            <div class="subtitle-info_subitem-blog-info">Собственное производство</div>
+                    <div class="subtitle-info_blog">
+                        <div class="subtitle-info_subitem">
+                            <div class="bg-color"></div>
+                            <div class="subtitle-info_subitem-blog">
+                                <img src="./img/star-icon.svg" alt="Star">
+                                <div class="subtitle-info_subitem-blog-info">Собственное производство</div>
+                            </div>
+                            <div class="subtitle-info_subitem-blog">
+                                <img src="./img/basket-icon.svg" alt="Basket">
+                                <div class="subtitle-info_subitem-blog-info">Наличие товара <br> на складе</div>
+                            </div>
+                            <div class="subtitle-info_subitem-blog">
+                                <img src="./img/document-icon.svg" alt="Document">
+                                <div class="subtitle-info_subitem-blog-info">Выдаем всю документацию</div>
+                            </div>
                         </div>
-                        <div class="subtitle-info_subitem-blog">
-                            <img src="./img/basket-icon.svg" alt="Basket">
-                            <div class="subtitle-info_subitem-blog-info">Наличие товара <br> на складе</div>
-                        </div>
-                        <div class="subtitle-info_subitem-blog">
-                            <img src="./img/document-icon.svg" alt="Document">
-                            <div class="subtitle-info_subitem-blog-info">Выдаем всю документацию</div>
-                        </div>
-                    </div>
+                    </div>                    
                 </div>
                 <div class="subtitle-image">
                     <img src="./img/maket.png" alt="Sketch">
@@ -107,7 +107,7 @@
                         <div class="plan-blog_info">
                             <div class="plan-blog_title">Торговые центры</div>
                             <li class="plan-blog_subtitle">Садовый центр Дарвин</li>
-                            <li class="plan-blog_subtitle">OBI</li>
+                            <li class="plan-blog_subtitle" id="display-none">OBI</li>
                             <li class="plan-blog_subtitle">Тц Вешняки</li>
                             <li class="plan-blog_subtitle" id="last-blog">ТЦ Любимый Мичуринский <br> проспект</li>
                         </div>
@@ -132,8 +132,8 @@
                             <div class="plan-blog_title">Производственные здания</div>
                             <li class="plan-blog_subtitle">Завод Renault</li>
                             <li class="plan-blog_subtitle">Завод Майский Чай</li>
-                            <li class="plan-blog_subtitle">Завод Хохланд Рус</li>
-                            <li class="plan-blog_subtitle">Завод KERAMA MARAZZI</li>
+                            <li class="plan-blog_subtitle" id="display-none">Завод Хохланд Рус</li>
+                            <li class="plan-blog_subtitle" id="display-none">Завод KERAMA MARAZZI</li>
                         </div>
                     </div>
                 </div>
@@ -295,7 +295,7 @@
                 </div>
                 <div class="answers-blog">
                     <div class="answers-blog_info">
-                        <div class="answers-blog_info-title">Какая документация предоставляется после монтажа?</div>
+                        <div class="answers-blog_info-title">Какая документация предоставляется <span>после монтажа?</span></div>
                         <div class="answers-blog_info-subtitle">Время от отправки заявки до готовой сметы и проекта занимает в среднем 3-5 дней</div>
                     </div>
                     <div class="answers-blog_arrow">
